@@ -1,5 +1,10 @@
 #!/bin/bash
 
+cd /var/www/html
+wget https://github.com/xpressengine/xe-core/archive/develop.tar.gz
+tar xzvf develop.tar.gz
+cd ~
+
 __create_user() {
 # Create a user to SSH into as.
 SSH_USERPASS=`pwgen -c -n -1 8`
