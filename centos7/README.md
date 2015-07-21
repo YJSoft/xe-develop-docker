@@ -13,13 +13,13 @@ This repo contains a recipe for making a [Docker](http://docker.io) container fo
 To build, make sure you have Docker [installed](http://www.docker.io/gettingstarted/), clone this repo somewhere, and then run:
 
 ```
-# docker build -rm -t <yourname>/wordpress:centos7 .
+# docker build --rm -t <yourname>/xpressengine:centos7 .
 ```
 
 Run it:
 
 ```
-# CID=$(docker run -d -p 80 -p 22 <yourname>/wordpress:centos7)
+# CID=$(docker run -d -p 80 -p 22 <yourname>/xpressengine:centos7)
 ```
 
 Check docker logs after running to see MySQL root password and Wordpress MySQL password, as so:
