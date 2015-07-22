@@ -3,6 +3,9 @@
 cd /var/www/html
 wget https://github.com/xpressengine/xe-core/archive/develop.tar.gz
 tar xzvf develop.tar.gz
+cp -R xe-core-develop/* .
+rm -rf xe-core-develop
+rm -rf develop.tar.gz
 cd ~
 
 __create_user() {
